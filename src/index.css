@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a0a1a;
+  color: #f4f7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.glass {
+  background: rgba(18, 26, 43, 0.75);
+  border: 1px solid rgba(145, 164, 219, 0.22);
+  backdrop-filter: blur(12px);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.orb {
+  position: fixed;
+  border-radius: 9999px;
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+}
+
+.orb-1 {
+  width: 260px;
+  height: 260px;
+  top: 8%;
+  left: -60px;
+  background: #6366f1;
+}
+
+.orb-2 {
+  width: 320px;
+  height: 320px;
+  top: 30%;
+  right: -100px;
+  background: #8b5cf6;
+}
+
+.orb-3 {
+  width: 230px;
+  height: 230px;
+  bottom: 4%;
+  left: 30%;
+  background: #ec4899;
+}
